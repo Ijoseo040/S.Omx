@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Sistemas Operativos</title>
+</head>
+<body>
+	<header>
+		<h1 class="titulo">Universidad Hipócrates Acapulco</h1>
+	</header>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="video/keyboard6.mp4" type="video/mp4">
+			</video>
+	
+			<article>
+				<h2>Tema 1.6: Principales aspectos del hardware de importancia para los sistemas operativos</h2>
+				<p> * Compaginación del Almacenamiento
+                    <br> - Su objetivo es acelerar el acceso al almacenamiento primario.
+            <br><br>* Registro de relocalización
+                    <br> - En el registro de relocalización.
+            <br><br>* Interrupciones y Escrutinio
+                    <br> - Interrupciones: Permite a una unidad obtener la inmediata atención de otra, de manera que la primera pueda informar de un cambio de estado.
+                    <br> - Escrutinio: Técnica que permite que una unidad verifique el estado de otra unidad de funcionamiento independiente.
+            <br><br>* Utilización del buffer
+                    <br> - Un "Buffer" es un área de almacenamiento primario destinada a contener datos durante transferencias de E/S.
+                    <br> - Esquema de "Entradas de buffer simple":
+                    <br>   * El canal deposita datos en el buffer.
+                    <br>   * El procesador procesa estos datos.
+                    <br>   * El canal deposita nuevos datos, etc.
+                    <br> - Esquema de "Entradas de buffer bloble":
+                    <br>   * Permite la sobreposición de operaciones de E/S con el procesamiento.
+                    <br>   * Mientras el canal deposita datos en un buffer el procesador puede estar procesando los datos del otro buffer.
+            <br><br>* Dispositivos periféricos
+                    <br> - Permite el almacenamiento de grandes cantidades de información fuera del almacenamiento principal.
+                    <br> - Existen dispositivos secuenciales y de acceso directo.
+                    <br> - Las caracteristicas y prestaciones son muy variadas.
+            <br><br>* Almacenamiento virtual
+                    <br> - Permite a los programas referenciar direcciones no reales disponibles en el almacenamiento primario.
+            <br><br>* Menciona las 3 jerarquias de almacenamiento:
+                    <br> - Primario: Memoria principal.
+                    <br> - Secundario: Discos, Cintas, etc.
+                    <br> - Caché: Memoria muy veloz diseñada para aumentar la velocidad de ejecución de los programas. 
+					<br><br> 
+					
+					<br><hr><br>
+					<figure class="text-center">
+						<blockquote class="blockquote">
+						  <h2>- Evaluación -</h2>
+						</blockquote>
+					</figure>
+					
+					<div class="mx-auto" style="width: 290px;">
+						<div class="alert alert-primary" role="alert">
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSclAWJ3mNGBIylOLPHEiNG8JwdIIj4pBjx2V-VnQYzyuEhtCw/viewform" class="alert-link">Empezar Evaluación del Tema</a>
+						  </div>
+					  </div>
+					<br><hr><br>
+                                                  
+												  <nav aria-label="Page navigation example">
+													<ul class="pagination justify-content-center">
+													  <li class="page-item">
+														<a class="page-link" href="Tema5.html">Anterior</a>
+													  </li>
+													  <li class="page-item"><a class="page-link" href="Tema1.html">1</a></li>
+													  <li class="page-item"><a class="page-link" href="Tema2.html">2</a></li>
+													  <li class="page-item"><a class="page-link" href="Tema3.html">3</a></li>
+													  <li class="page-item"><a class="page-link" href="Tema4.html">4</a></li>
+													  <li class="page-item"><a class="page-link" href="Tema5.html">5</a></li>
+													  <li class="page-item"><a class="page-link" href="Tema6.html">6</a></li>
+													  <li class="page-item"><a class="page-link" href="Tema7.html">7</a></li>
+													  <li class="page-item"><a class="page-link" href="Tema8.html">8</a></li>
+													  <li class="page-item">
+														<a class="page-link" href="Tema7.html">Siguiente</a>
+													  </li>
+													</ul>
+												  </nav>
+						
+				</p>
+                </article>
+            </div>
+        </main>
+    
+        <script>
+            var reproductor = videojs('fm-video', {
+                fluid: true
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+	<script src="js/main.js"></script>
+    </body>
+    </html>

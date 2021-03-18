@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Sistemas Operativos</title>
+</head>
+<body>
+	<header>
+		<h1 class="titulo">Universidad Hipócrates Acapulco</h1>
+	</header>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="video/keyboard8.mp4" type="video/mp4">
+			</video>
+	
+			<article>
+				<h2>Tema 1.8: Respecto a la memoria fija</h2>
+				<p> * Microprogramación estan formadas por microinstrucciones individuales que en la relación de la instrucción de los lenguajes de maquina son de:
+                  <br> - Naturaleza mucho más elemental.
+                  <br> - Función más dispersa.
+            <br><br>* Microcódigos
+                  <br> - Vertical: * Es similar a la ejecución de instrucciones en lenguaje de máquina.
+                  <br>             * Especifica el movimiento de uno o varios datos entre registros.
+                  <br> - Horizontal: * Está constituído por microinstrucciones que requieren muchos más bits.
+                                     * Puede especificar la operación paralela de movimiento de datos entre muchos o todos los registros de datos de la unidad de control.
+                                     * Es más poderoso pero más complejo que el microcódigo vertical.
+            <br><br>* Emulación: Es el conjunto de instrucciones de lenguaje de máquina que va a ser emulada se microprograma en la máquina anfitriona. Los programas de lenguaje de máquina de la máquina emulada pueden ejecutarse directamente en la anfitriona.
+            <br><br>* Microdiagnósticos: Tiene más acceso al hardware que los programas de lenguaje de máquina. Es posible afectar detección y corrección de errores más amplia a un nivel más fino. Se puede intercalar el "Microdiagnóstico" con las instrucciones de programas de lenguaje de máquina.
+            <br><br>* Computadores personalizados: Moldean el sistema computacional según las necesidades del usuario. En algunos sistemas los usuarios pueden efectuar esta adaptación por medio de un microcódigo.
+            <br><br>* Asistencias de microcódigos: Implementan varias rutinas de manejo de interrupciones de uso más frecuente en microcódigo a fin de lograr mejoras significativas en la ejecución.
+            <br><br>* Microprogramación y Sistemas Operativos: Las funciones implementadas frecuentemente en microcódigo son las siguientes:
+                  <br> - Manejo de interrupciones.
+                  <br> - Mantenimiento de varios tipos de estructuras de datos.
+                  <br> - Primitivas de sincronización que controlan el acceso a los datos compartidos y otros recursos.
+                  <br> - Operaciones de palabras parciales que permiten que las operaciones de manipulación de bits sean manejadas en forma eficiente.
+                  <br> - Secuencias de regreso y llamada al procesamiento.
+					<br><br> 
+					
+					<br><hr><br>
+					<figure class="text-center">
+						<blockquote class="blockquote">
+						  <h2>- Evaluación -</h2>
+						</blockquote>
+					</figure>
+					
+					<div class="mx-auto" style="width: 290px;">
+						<div class="alert alert-primary" role="alert">
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSc4WDZy9QwldJI-VzRX1FDmN9NUIH0xGanvyZBVHkwv6ZqTiw/viewform" class="alert-link">Empezar Evaluación del Tema</a>
+						  </div>
+					  </div>
+					<br><hr><br>
+
+						  <nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+							  <li class="page-item">
+								<a class="page-link" href="Tema7.html">Anterior</a>
+							  </li>
+							  <li class="page-item"><a class="page-link" href="Tema1.html">1</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema2.html">2</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema3.html">3</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema4.html">4</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema5.html">5</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema6.html">6</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema7.html">7</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema8.html">8</a></li>
+							  <li class="page-item">
+								<a class="page-link" href="index.html">Siguiente</a>
+							  </li>
+							</ul>
+						  </nav>
+
+				</p>
+                </article>
+            </div>
+        </main>
+    
+        <script>
+            var reproductor = videojs('fm-video', {
+                fluid: true
+            });
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+		<script src="js/main.js"></script>
+    </body>
+    </html>

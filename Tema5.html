@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Sistemas Operativos</title>
+</head>
+<body>
+	<header>
+		<h1 class="titulo">Universidad Hipócrates Acapulco</h1>
+	</header>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="video/keyboard5.mp4" type="video/mp4">
+			</video>
+	
+			<article>
+				<h2>Tema 1.5: Estructura de los Sistemas Operativos</h2>
+				<p> * ¿Qué es un Sistemas Monoliticos? Es un sistema operativo con una colección de procedimientos que se puede llamar entre si, sin una estructura propiamente dicha.
+                    <br><br> * ¿Que es un Sistema de Capas? Es una estructura simple organizada para los "Sistemas Monoliticos"
+                        <br> Contiene 5 capas:
+                        <br> - Capa 0: * Trabaja con la asiganción del procesador.
+                                  <br> * Alterna procesos.
+                                  <br> * Proporciona multiprogramación.
+                    <br><br> - Capa 1: * Administra memoria.
+                                  <br> * Asegura que las paginas requeridas lleguen a los procesos de memoria.
+                    <br><br> - Capa 2: * Administra la comunicación entre cada proceso y la consola.
+                    <br><br> - Capa 3: * Contropla dispositivo E/S.
+                    <br><br> - Capa 4: * Aloja los programas del usuario.
+                    <br><br> - Capa 5: * Localiza el proceso utilizando del sistema.
+                    <br><br> * ¿Qué es una Maquina Virtual? Separan las funciones multiprogramación de la maquina extendida. El monitor de la maquina virtual se ejecuta mediante el hardware y realiza la multiprogramación soportando perifericos virtuales.
+                    <br><br> * ¿Qué es un Módelo Cliente / Servidor? Los sistemas operativos modernos explotan la idea de mover su código a las capas superiores y mantener un núcleo minimo. En un sistema operativo se fracciona con 4 partes haciendo así cada parte más pequeña y aun mas controlable.
+                        <br> - Servidor a archivos.
+                        <br> - Servidor de procesos.
+                        <br> - Servidor de terminales.
+                        <br> - Servidor a memoria.
+                    <br><br> 
+
+					<br><hr><br>
+					<figure class="text-center">
+						<blockquote class="blockquote">
+						  <h2>- Evaluación -</h2>
+						</blockquote>
+					</figure>
+					
+					<div class="mx-auto" style="width: 290px;">
+						<div class="alert alert-primary" role="alert">
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSd_sqZq8_y_UrBTdNtyXeXb_3bJyjxEARzKMjekXPHlKzaQfQ/viewform" class="alert-link">Empezar Evaluación del Tema</a>
+						  </div>
+					  </div>
+					<br><hr><br>
+
+						  <nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+							  <li class="page-item">
+								<a class="page-link" href="Tema4.html">Anterior</a>
+							  </li>
+							  <li class="page-item"><a class="page-link" href="Tema1.html">1</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema2.html">2</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema3.html">3</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema4.html">4</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema5.html">5</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema6.html">6</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema7.html">7</a></li>
+							  <li class="page-item"><a class="page-link" href="Tema8.html">8</a></li>
+							  <li class="page-item">
+								<a class="page-link" href="Tema6.html">Siguiente</a>
+							  </li>
+							</ul>
+						  </nav>
+
+				</p>
+                </article>
+            </div>
+        </main>
+    
+        <script>
+            var reproductor = videojs('fm-video', {
+                fluid: true
+            });
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+		<script src="js/main.js"></script>
+    </body>
+    </html>
