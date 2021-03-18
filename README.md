@@ -1,0 +1,2 @@
+# S.Omx
+Sistemas Operativos
